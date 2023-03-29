@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: sans-serif;
+            color: rgb(72, 53, 69);
+            font-size: 14px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(224, 202, 222, 0.6), rgba(179, 170, 177, 0.6)), url(img/tsvetya-za-svatba-1536x1024.jpg);
+            background-size: cover;
+            height: 100vh;
+            color: rgb(72, 53, 69);
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        a:link,
+        a:visited {
+            background-color: rgb(80, 40, 114);
+            height: 40px;
+            padding: 10px 4px;
+            width: 100px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .hero-container {
+            margin: 0 auto;
+            width: 1000px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .inner-container {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 54px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div>LOGO</div>
+            <div>Links</div>
+        </nav>
+        <div class="hero-container">
+            <div clas="inner-container">
+                <h1>
+                    Цветен свят
+                </h1>
+                <p>
+                    <i>Магазин за доставка на цветно насторение и усмивки!</i>
+                </p>
+                <a href="вижте повече">вижте повече</a>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <h2>
+            Букети
+        </h2>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
