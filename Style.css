@@ -278,7 +278,7 @@ h1 {
 
 .btn--form {
     background-color: #895f87bd;
-    background-color: ;
+    background-color: none;
     color: #c1baba;
     align-self: end;
     padding: 1.2rem;

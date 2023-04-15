@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            color: rgb(82, 136, 118);
+
+        }
+
+        button {
+            margin: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+    <div id="mariana"><span>M</span><span style="left:30px">a</span><span style="left:40px">r</span><span
+            style="left:50px">i</span>
+        <span style="left:60px">a</span><span style="left:70px">n</span><span style="left:80px">a</span>
+    </div>
+    </p>
+    <p>
+        <button onclick="animateName()">Tap Me</button>
+    </p>
+    <script>
+        function myMove(elem, i) {
+            var pos = i * 50;
+            var fontSize = (i + 1) * 12;
+            var id = null;
+            clearInterval(id);
+            id = setInterval(frame, 10);
+            function frame() {
+                if (pos == 350 + (i * 50)) {
+                    elem.style.top = 450 + 'px';
+                    elem.style.fontSize = 50 + 'px';
+                    clearInterval(id);
+                }
+                else {
+                    pos++;
+                    fontSize++;
+                    elem.style.top = pos + 'px';
+                    elem.style.left = pos + 'px';
+                    elem.style.fontSize = fontSize + 'px';
+                }
+            }
+        }
+        function animateName() {
+            var elemes = document.getElementsByTagName('span');
+
+            for (let i = 0; i < elemes.length; i++) {
+                myMove(elemes[i], i);
+            }
+        }
+    </script>
+</body>
+
+</html>
