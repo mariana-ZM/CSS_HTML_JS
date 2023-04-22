@@ -15,6 +15,7 @@ header {
 
     background-size: cover;
     height: 90vh;
+    border-radius: 10px;
 
 
 }
@@ -49,6 +50,7 @@ a:visited {
     background-image: linear-gradient(to right bottom, #81417d95, #DFB3CE);
     overflow: hidden;
 }
+
 
 .main-nav {
     display: flex;
@@ -138,13 +140,15 @@ a:visited {
 
 
 .container {
-    margin: 0 auto;
+    margin: 2.8rem auto;
     max-width: 120rem;
     padding: 0 3.2rem;
 
 }
 
 /********HERO SECTION*******/
+
+
 h1 {
     font-size: 4.2rem;
     align-content: center;
@@ -152,13 +156,13 @@ h1 {
 }
 
 .subheading {
-    display: block;
+    display: contents;
     font-size: 1.6rem;
     font-weight: 500;
-    color: #81417D;
+    color: #5e215a;
     text-transform: uppercase;
-    margin-bottom: 1.8rem;
-    letter-spacing: 0.75px;
+    margin: 2 1 1 2;
+    letter-spacing: 1px;
 }
 
 .hero {
@@ -193,34 +197,49 @@ h1 {
 
 .grid-3-colls {
     grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: right;
+    background-color: blanchedalmond;
+    border-radius: 10px;
 }
 
 .product {
     position: static;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: right;
-    background-color: blanchedalmond;
+    background-color: burlywood;
     border-radius: 10px;
 
 }
 
-#products {
-    background-color: #317651ea;
-}
 
 .product-img {
-    width: 140px;
-    height: 150px;
+    width: 160px;
+    height: 170px;
 
+}
+
+#product {
+    padding: 2.8rem 6.4rem 6.4rem 6.8rem;
 
 }
 
 .product-title {
     font-size: 2.4rem;
-    color: #333;
+    color: #5e215a;
     font-weight: 600;
     margin-bottom: 3.2rem;
+    display: flex;
+    justify-content: center;
 }
 
 /*********** CTA ********************/
@@ -285,7 +304,7 @@ h1 {
 }
 
 #cta {
-    padding: 4.8rem 0 12.8rem;
+    padding: 1rem 0 1rem;
 }
 
 .cta-text {
@@ -293,6 +312,7 @@ h1 {
 }
 
 /********FOOTER*********/
+
 .grid-4-colls {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: blanchedalmond;
@@ -306,6 +326,7 @@ h1 {
     font-weight: 700;
     color: black;
     margin-bottom: 2.8rem;
+    margin-top: 1rem;
     letter-spacing: 0.75px;
 
 }
