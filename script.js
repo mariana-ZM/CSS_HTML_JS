@@ -19,3 +19,7 @@ alllinks.forEach(ScrollSmooth);
 
 const headerEl = document.querySelector(".header");
 
+var openEl = document.getElementsByName("menu-outline")[0];
+var closeEl = document.getElementsByName("close-outline")[0];
+closeEl.classList.toggle("hideButton");
+
